@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // const gifs = document.querySelectorAll("img[src$='.gif']");
-    // gifs.forEach((gif) => {
-    //     const src = gif.src; // Get the original src
-    //     gif.src = ""; // Temporarily clear the src
-        
-    //     gif.src = `${src}?t=${new Date().getTime()}`; // Reassign the original src to reload the GIF
-    //     console.log(gif.src);
-    // });
-
     const stars = 800;
     
     const starsContainer = document.querySelector(".stars");
