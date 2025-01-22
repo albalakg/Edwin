@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const gifs = document.querySelectorAll("img[src$='.gif']");
+    gifs.forEach((gif) => {
+        const src = gif.src; // Get the original src
+        gif.src = ""; // Temporarily clear the src
+        gif.src = src; // Reassign the original src to reload the GIF
+    });
+
     const stars = 800;
     
     const starsContainer = document.querySelector(".stars");
