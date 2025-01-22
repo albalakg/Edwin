@@ -3,7 +3,8 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Instrument Serif", serif;
+  font-family: "Sen", sans-serif;
+  /* font-family: "Instrument Serif", serif; */
   letter-spacing: 4px;
   font-weight: 400;
 }
@@ -100,6 +101,7 @@ body {
   opacity: 0;
   animation: fadeIn 3s ease-in forwards;
   animation-delay: 6.3s;
+  z-index: 5;
 }
 
 .edwin-character-animation {
@@ -107,6 +109,7 @@ body {
   width: 30%;
   top: -120px;
   position: relative;
+  z-index: 5;
 }
 
 header {
@@ -153,7 +156,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
+  width: 45%;
   position: relative;
   z-index: 3;
   opacity: 1;
@@ -165,6 +168,27 @@ header {
   animation-delay: 5.5s;
 }
 
+h1 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  background: linear-gradient(45deg, #2c2583, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+h2 {
+  color: #eeec;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 5em;
+  background: linear-gradient(45deg, #2c2583, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* 
 h1 {
   font-size: 11em;
   letter-spacing: 0.1em;
@@ -182,7 +206,7 @@ h2 {
   background: linear-gradient(45deg, #1e1684, #d4af37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 img,
 video,
@@ -191,15 +215,50 @@ h2 {
   pointer-events: none;
 }
 
+.info-links {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  opacity: 0;
+  animation: fadeIn 3s ease-in forwards;
+  animation-delay: 5.5s;
+}
+
+.info-link {
+  cursor: pointer;
+  width: fit-content;
+  height: 20px;
+  background: linear-gradient(90deg, #2c2583cc, #d4af37cc);
+  border-radius: 25px;
+  padding: 10px 18px;
+  z-index: 3;
+  position: relative;
+  box-shadow: inset 0 0 5px 2px #000c;
+  margin-right: 15px;
+  text-align: center;
+  min-width: 80px;
+  transition: 0.3 background linear;
+}
+
+.info-link:hover {
+  background: linear-gradient(90deg, #2c2583, #d4af37);
+}
+
+.info-link a {
+  position: relative;
+  top: 2px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
 .social-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 350px;
+  width: 300px;
   margin-top: 20px;
-  /* position: absolute;
-    bottom: 30px;
-    left: 2%; */
 }
 
 .social-link {
@@ -213,19 +272,14 @@ h2 {
   cursor: pointer;
   z-index: 3;
   position: relative;
-  transition: 0.3s background-color linear;
 }
 
-.social-link:hover {
-  /* background-color: #39315766; */
+.dex-screener svg {
+  margin-left: 3px;
 }
 
 .social-link:hover svg {
   fill: #d1b34fee;
-}
-
-.docs-icon {
-  margin-left: 4px;
 }
 
 .social-link svg {
@@ -238,8 +292,8 @@ h2 {
     width: 50%;
   }
 
-  h1 {
-    font-size: 9em;
+  h2 {
+    font-size: 4em;
   }
 
   .finance-screen-wrapper {
@@ -250,10 +304,6 @@ h2 {
 @media only screen and (max-width: 1200px) {
   .header-content {
     width: 60%;
-  }
-
-  h1 {
-    font-size: 7em;
   }
 }
 
@@ -266,19 +316,15 @@ h2 {
 
   .header-content {
     position: absolute;
-    top: 32%;
+    top: 38%;
     left: 10%;
     width: 80%;
   }
 
-  h1 {
-    font-size: 4.2em;
-  }
-
   .edwin-character-animation-wrapper {
     position: absolute;
-    right: 110px;
-    top: 145px;
+    right: 80px;
+    top: -135px;
   }
 
   .edwin-character-animation {
@@ -307,5 +353,13 @@ h2 {
 
   .header-text {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2.5em;
   }
 }

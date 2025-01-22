@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gifs.forEach((gif) => {
         const src = gif.src; // Get the original src
         gif.src = ""; // Temporarily clear the src
+        
         gif.src = `${src}?t=${new Date().getTime()}`; // Reassign the original src to reload the GIF
         console.log(gif.src);
     });
