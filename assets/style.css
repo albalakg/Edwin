@@ -291,7 +291,7 @@ h2 {
 
   .header-content {
     position: absolute;
-    bottom: 42%;
+    bottom: 45%;
     left: 10%;
     width: 80%;
   }
@@ -339,6 +339,6 @@ h2 {
   }
 
   .info-links {
-    bottom: 33%;
+    bottom: 36%;
   }
 }
