@@ -43,7 +43,7 @@ body {
     z-index: 2;
     width: 15%;
     animation: fadeOut 2s ease-in forwards;
-    animation-delay: 5.3s;
+    animation-delay: 4s;
 }
 
 @keyframes floatRotate {
@@ -54,7 +54,7 @@ body {
 
 .finance-screen-wrapper {
     position: absolute;
-    z-index: 5;
+    z-index: 0;
     left: 0;
     right: 0;
     margin: auto;
@@ -62,7 +62,7 @@ body {
     top: 12%;
     border-radius: 6px;
     animation: fadeOut 1s ease-in forwards;
-    animation-delay: 6s;
+    animation-delay: 4.2s;
 
 
     /* transform-style: preserve-3d;
@@ -72,32 +72,26 @@ body {
     transition: transform 0.3s ease; */
 }
 
-
-@keyframes showFinanceScreen {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 .finance-screen {
     border-radius: 6px;
     position: relative;
     z-index: 1;
     opacity: 0;
-    animation: showFinanceScreen 1s ease forwards;
-    animation-delay: 4s;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 2s;
 }
 
 .edwin-character-animation-wrapper {
     text-align: right;
     opacity: 0;
     animation: fadeIn 3s ease-in forwards;
-    animation-delay: 7.8s;
+    animation-delay: 6.3s;
 }
 
 .edwin-character-animation {
     min-width: 200px;
     width: 30%;
-    top: -108px;
+    top: -120px;
     position: relative;
 }
 
@@ -123,7 +117,7 @@ header {
     z-index: 1;
     opacity: 0;
     animation: fadeIn 3s ease-in forwards;
-    animation-delay: 5.5s;
+    animation-delay: 4s;
 }
 
 .background-moon {
@@ -138,24 +132,23 @@ header {
     border-radius: 100px;
     opacity: 0;
     animation: fadeIn 3s ease-in forwards;
-    animation-delay: 7s;
+    animation-delay: 5.7s;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 45%;
+    width: 35%;
     position: relative;
     z-index: 3;
     opacity: 1;
-    /* top: -10%; */
 }
 
 .header-text {
     opacity: 0;
     animation: fadeIn 3s ease-in forwards;
-    animation-delay: 6.8s;
+    animation-delay: 5.5s;
 }
 
 h1 {
@@ -268,14 +261,15 @@ img, video, h1, h2 {
 
     .edwin-character-animation-wrapper {
         position: absolute;
-        right: 100px;
-        top: 25px;
+        right: 110px;
+        top: 145px;
     }
 
     .edwin-character-animation {
         position: absolute;
         width: 100px;
         min-width: 100px;
+        top: unset;
     }
         
     .background-moon {
