@@ -231,8 +231,8 @@ h2 {
   cursor: pointer;
   width: fit-content;
   height: 20px;
-  background: linear-gradient(90deg, #2c2583dd, #d4af37dd);
   border-radius: 25px;
+  border: 1px solid #eee;
   padding: 10px 18px;
   z-index: 3;
   position: relative;
@@ -240,18 +240,19 @@ h2 {
   margin-right: 15px;
   text-align: center;
   min-width: 80px;
-  transition: 0.3 background linear;
+  background-color: transparent;
+  transition: 0.2s background-color linear;
 }
 
 .info-link:hover {
-  background: linear-gradient(90deg, #2c2583, #d4af37);
+  background-color: #fff3;
 }
 
 .info-link a {
   position: relative;
   top: 2px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-weight: bold;
 }
 
