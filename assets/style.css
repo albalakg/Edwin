@@ -171,6 +171,7 @@ header {
 h1 {
   font-size: 3em;
   letter-spacing: 0.1em;
+  margin-left: 3px;
   background: linear-gradient(45deg, #2c2583, #d4af37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
