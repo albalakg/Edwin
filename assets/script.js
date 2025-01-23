@@ -3,6 +3,13 @@ gifElement.src =
   "./assets/images/animation-loading.gif?cacheBuster=" + new Date().getTime();
 
 document.addEventListener("DOMContentLoaded", function () {
+  // get page height
+  const pageHeight = window.innerHeight;
+  console.log("pageHeight", pageHeight);
+  // insert pageheight into element text
+  const pageHeightElement = document.getElementById("pageHeight");
+  pageHeightElement.textContent = pageHeight;
+
   const stars = 800;
 
   const starsContainer = document.querySelector(".stars");
