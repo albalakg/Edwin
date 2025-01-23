@@ -181,6 +181,7 @@ h1 {
   font-size: 3em;
   letter-spacing: 0.1em;
   background: linear-gradient(45deg, #2c2583, #d4af37);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -192,6 +193,7 @@ h2 {
   font-weight: 600;
   font-size: 5em;
   background: linear-gradient(45deg, #2c2583, #d4af37);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
