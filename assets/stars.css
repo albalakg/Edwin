@@ -49,7 +49,10 @@ body {
   transform: translate3d(0, 0, -100px);
   backface-visibility: hidden;
   z-index: 0;
+  box-shadow: 0 0 1px 1px #fff6;
+  border-radius: 1px;
 }
+
 .blink {
   -moz-animation: blinkx 1s forwards ease-in-out;
   -o-animation: blinkx 1s forwards ease-in-out;
