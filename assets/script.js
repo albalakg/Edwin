@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const starElements = document.querySelectorAll(".star");
   starElements.forEach(function (star) {
     const s = 0.2 + Math.random() * 2;
-    const curR = r + Math.random() * 600;
+    const curR = r + Math.random() * 200;
 
     star.style.transformOrigin = `0 0 ${curR}px`;
     star.style.transform = `translate3d(0,0,-${curR}px) rotateY(${
