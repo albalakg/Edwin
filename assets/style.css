@@ -18,6 +18,7 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -27,6 +28,7 @@ body {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     display: none;
@@ -59,9 +61,11 @@ body {
   0% {
     transform: rotateY(-15deg) rotateX(5deg) translateZ(0);
   }
+
   50% {
     transform: rotateY(-20deg) rotateX(8deg) translateZ(20px);
   }
+
   100% {
     transform: rotateY(-15deg) rotateX(5deg) translateZ(0);
   }
@@ -120,21 +124,34 @@ header {
 
 .background-image {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
+  /* right: 0;
+  top: 0; */
+  width: 50%;
   z-index: 1;
   opacity: 0;
   animation: fadeIn 3s ease-in forwards;
   animation-delay: 4s;
 }
 
+#top-wave {
+  top: 0;
+  left: 0;
+}
+
+#bottom-wave {
+  bottom: 0;
+  right: 0;
+}
+
 .background-moon {
   position: absolute;
-  right: 5%;
-  top: 10%;
-  width: 5%;
-  max-width: 200px;
+  right: 3vw;
+  top: 3vw;
+  /* right: 5%;
+  top: 10%; */
+  min-width: 15px;
+  max-width: 100px;
+  width: 13vw;
   z-index: 5;
   cursor: pointer;
   box-shadow: 0 0 10px 5px #fffa, inset 0 0 10px 5px #fff;
@@ -283,9 +300,16 @@ h2 {
 
 @media only screen and (max-width: 600px) {
   .background-image {
-    height: 100%;
+    width: 100%;
     object-fit: cover;
-    left: 0%;
+  }
+
+  #top-wave {
+    width: 80%;
+  }
+
+  #bottom-wave {
+    width: 150%;
   }
 
   .header-content {
@@ -309,8 +333,10 @@ h2 {
   }
 
   .background-moon {
-    width: 10%;
-    top: 3%;
+    /* width: 10%; */
+    /* top: 3%; */
+    right: 5vw;
+    top: 5vw;
   }
 
   .edwin-loading-animation {
