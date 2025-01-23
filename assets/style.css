@@ -136,11 +136,13 @@ header {
 #top-wave {
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 #bottom-wave {
   bottom: 0;
   right: 0;
+  z-index: 10;
 }
 
 .background-moon {
@@ -278,6 +280,20 @@ h2 {
 .social-link svg {
   height: 100%;
   transition: 0.3s fill linear;
+}
+
+#made-by {
+  color: #fff;
+  position: absolute;
+  bottom: 5px;
+  z-index: 200;
+  right: -2500px;
+}
+
+#made-by a {
+  color: #fff;
+  text-decoration: none;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 1600px) {
